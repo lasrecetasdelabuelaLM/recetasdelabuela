@@ -20,6 +20,13 @@
         padding: 15px;
         padding-left: 4%;
     }
+    .imagen-cabecera {
+        width: 75%;
+    }
+    .redes-sociales {
+        max-width: 45px;
+        width: 30%;
+    }
     .menu_navegacion {
         width: 100%;
         background-color: #dc982f;
@@ -56,10 +63,15 @@
     <div class="container-{breakpoint}"> <!-- Contenedor genérico de toda la página-->
         <div class="cabecera">
             <div class="row">
-            <div class="col-12 bg-transparent align-items-center"> 
-                <!-- Cabecera -->
-                <img src="./img/logo-abuela.png" alt="Logo Recetas Abuela"/>
-            </div>
+                <div class="col-10 bg-transparent align-items-center"> 
+                    <!-- Cabecera -->
+                    <img class="imagen-cabecera" src="./img/logo-abuela-alargado.png" alt="Logo Recetas Abuela"/>
+                </div>
+                <div class="col-2 bg-transparent align-items-center"> 
+                    <a href="http://www.instagram.com"><img class="redes-sociales" src="./img/instagram.png" alt="Instagram Las Recetas Abuela"/></a>
+                    <a href="http://www.twitter.com"><img class="redes-sociales" src="./img/twitter.png" alt="Twitter Las Recetas Abuela"/></a>
+                    <a href="http://www.facebook.com"><img class="redes-sociales" src="./img/facebook2.png" alt="Facebook Las Recetas Abuela"/></a>
+                </div>
             </div>
         </div>
         <div class="row">
