@@ -20,6 +20,14 @@
         width: 100%;
         background-color: #dc982f;
     }
+
+    /* Imágenes del slider */
+
+    .mySlides {
+
+        width: 400px;
+    }
+
     /* Estilos de diseño de secciones */
     h1 {
         font-family: 'Zhi Mang Xing', cursive;
