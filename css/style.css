@@ -36,7 +36,7 @@
     /* Estilos de los textos en las recetas*/
     .enfasis_recetas {
         text-decoration: underline;
-        text-decoration: ;
+        font-weight: bold;
     }
 
     /* Estilos correspondientes al menú de navegación*/
