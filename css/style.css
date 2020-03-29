@@ -25,7 +25,7 @@
 
     /* Estilos de diseño de secciones */
     .h1_cabecera_seccion {
-        font-family: 'Zhi Mang Xing', cursive;
+        font-family: 'Pacifico', cursive;
         font-size: 35px;
     }
 
@@ -33,20 +33,25 @@
         font-family: 'Arvo', serif;
         font-size: 25px;
     }
+    /* Estilos de los textos en las recetas*/
+    .enfasis_recetas {
+        text-decoration: underline;
+        font-weight: bold;
+    }
 
     /* Estilos correspondientes al menú de navegación*/
-    ul {
+    .ul_menu {
     list-style-type: none;
     margin: 1px;
     padding: 1px;
     overflow: hidden;
     }
 
-    li {
+    .lista_menu {
         float: left;
     }
 
-    li a {
+    .lista_menu a {
        display:block;
        color: black; 
        text-align: center;
@@ -54,7 +59,7 @@
        text-decoration: none;
     }
 
-    li a:hover {
+    .lista_menu a:hover {
         text-decoration: none;
         font-style: italic;
         color: white;

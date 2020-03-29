@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Tipografía a utilizar Arvo-->
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 
     <title>Las Recetas de la Abuela</title>
 </head>
@@ -48,14 +49,14 @@
         <div class="row"> <!-- Este div da inicio al menú -->
             <div class="col-12 menu_navegacion">
                 <div class="col-12 bg-transparent align-items-center">
-                <ul>
-                    <li><a href="ruta" target = "_blank" >Inicio</a></li>
-                    <li><a href="./pages/verduras/index.html" target = "_blank" >Verduras</a></li>
-                    <li><a href="./pages/arrocesYpastas/index.html" target = "_blank" >Arroces y pastas</a></li>
-                    <li><a href="./pages/carnes/index.html" target = "_blank" >Carnes</a></li>
-                    <li><a href="./pages/pescados/index.html" target = "_blank" >Pescados</a></li>
-                    <li><a href="./pages/postres/index.html" target = "_blank" >Postres</a></li>
-                    <li><a href="./pages/contacto.hmtl" target = "_blank" >Contacto</a></li>  
+                <ul class="ul_menu">
+                    <li class="lista_menu"><a href="index.html">Inicio</a></li>
+                    <li class="lista_menu"><a href="./pages/verduras/index.html">Verduras</a></li>
+                    <li class="lista_menu"><a href="./pages/arrocesYpastas/index.html">Arroces y pastas</a></li>
+                    <li class="lista_menu"><a href="./pages/carnes/index.html">Carnes</a></li>
+                    <li class="lista_menu"><a href="./pages/pescados/index.html">Pescados</a></li>
+                    <li class="lista_menu"><a href="./pages/postres/index.html">Postres</a></li>
+                    <li class="lista_menu"><a href="./pages/contacto.html">Contacto</a></li>  
                 </ul>	
                 </div>
             </div>
@@ -142,10 +143,14 @@
                         <h1 class="h1_cabecera_seccion">Puede interesar...</h1>
                         <hr>
                     </div>
-                </aside>
-        </div> <!-- este div cierra el cuerpo -->
+                </aside>     
+            </div>
+        </div>
+    </div><!-- este div cierra el cuerpo -->
+        <footer class="cabecera text-center"> <!-- Inicio footer -->
+            <p>2020 &copy; Recetas de la Abuela</p>
+        </footer> <!-- Fin footer -->
     </div> <!-- este div cierra el container fluid principal -->
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -156,12 +161,4 @@
         crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
-<footer>
-    <small>
-    <p id = "foot">
-        &copy; Recetas de la Abuela All Rights Reserved
-    </p>
-    </small>
-</footer>
-
 </html>

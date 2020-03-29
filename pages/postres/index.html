@@ -48,15 +48,15 @@
         <div class="row"> <!-- Este div da inicio al menú -->
             <div class="col-12 menu_navegacion">
                 <div class="col-12 bg-transparent align-items-center">
-                <ul>
-                    <li><a href="ruta" target = "_blank" >Inicio</a></li>
-                    <li><a href="ruta" target = "_blank" >Verduras</a></li>
-                    <li><a href="ruta" target = "_blank" >Arroces y pastas</a></li>
-                    <li><a href="ruta" target = "_blank" >Carnes</a></li>
-                    <li><a href="ruta" target = "_blank" >Pescados</a></li>
-                    <li><a href="ruta" target = "_blank" >Postres</a></li>
-                    <li><a href="ruta" target = "_blank" >Contacto</a></li>  
-                </ul>	
+                    <ul class="ul_menu">
+                        <li class="lista_menu"><a href="../../index.html">Inicio</a></li>
+                        <li class="lista_menu"><a href="../verduras/index.html">Verduras</a></li>
+                        <li class="lista_menu"><a href="../arrocesYpastas/index.html">Arroces y pastas</a></li>
+                        <li class="lista_menu"><a href="../carnes/index.html">Carnes</a></li>
+                        <li class="lista_menu"><a href="../pescados/index.html">Pescados</a></li>
+                        <li class="lista_menu"><a href="../postres/index.html">Postres</a></li>
+                        <li class="lista_menu"><a href="../contacto.html">Contacto</a></li>  
+                    </ul>	
                 </div>
             </div>
         </div> <!-- este div cierra el menú-->
@@ -67,7 +67,7 @@
                     <article>
                         <p><h1 class="h1_cabecera_seccion">Postres</h1>
                         
-                        <img src="postres.jpg" alt="postres" class="img-fluid">
+                        <img src="../../img/recetas/postres/postres.jpg" alt="postres" class="img-fluid">
                         <hr>
                         <h1 class="cabecera_receta">Arroz con Leche</h1>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus soluta ea maxime eos explicabo dignissimos tenetur iste
@@ -118,8 +118,13 @@
                         <hr>
                     </div>
                 </aside>
-        </div> <!-- este div cierra el cuerpo -->
-    </div> <!-- este div cierra el container fluid principal -->
+            </div>
+        </div>
+    </div> <!-- este div cierra el cuerpo -->
+    <footer class="cabecera text-center"> <!-- Inicio footer -->
+        <p>2020 &copy; Recetas de la Abuela</p>
+    </footer> <!-- Fin footer -->
+</div><!-- este div cierra el container fluid principal -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -129,14 +134,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 </body>
-<footer>
-    <small>
-    <p id = "foot">
-        &copy; Recetas de la Abuela All Rights Reserved
-    </p>
-    </small>
-</footer>
-
 </html>
