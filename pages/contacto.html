@@ -94,13 +94,6 @@
                                             </div>
                     
                                             <div class="form-group" align="center">
-                                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                                <div class="col-md-6">
-                                                    <input id="email" name="email" type="text" placeholder="Dirección de correo electrónico" class="form-control">
-                                                </div>
-                                            </div>
-                    
-                                            <div class="form-group" align="center">
                                                 <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
                                                 <div class="col-md-6">
                                                     <input id="phone" name="phone" type="text" placeholder="Teléfono de contacto" class="form-control">
@@ -116,7 +109,7 @@
                     
                                             <div class="form-group" align="center">
                                                 <div class="col-md-12 text-center">
-                                                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                                    <button type="button" class="btn btn-primary btn-lg" onclick="sendMail();">Enviar</button>
                                                 </div>
                                             </div>
                                         </fieldset>
@@ -178,5 +171,20 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Script para el formulario -->
+    <script>
+    function sendMail() {
+        var name=encodeURIComponent(document.getElementById('fname').value + " " + document.getElementById('lname').value);
+        var bodymessage=encodeURIComponent(document.getElementById('message').value);
+        var phone=encodeURIComponent(document.getElementById('phone').value);
+        var link = "mailto:lasrecetasdelabuelalm@gmail.com"
+            + "?subject=Mensaje recibido desde la página web" 
+            + "&body=" + "Nombre: " + name + "%0A Teléfono: " + phone + "%0A" + bodymessage
+        ;
+    
+        window.location.href = link;
+    }
+    </script>
 </body>
 </html>
