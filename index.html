@@ -1,39 +1,52 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <!-- CSS -->
-    <link  rel="stylesheet" type="text/css" href= "css/style.css">
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Tipografía a utilizar Arvo-->
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
-    
+
     <title>Las Recetas de la Abuela</title>
 </head>
 
 <body>
-    <div class="container-{breakpoint}"> <!-- Contenedor genérico de toda la página-->
-        <div class="row cabecera">
-                <div class="col-10 bg-transparent align-items-center"> 
-                    <!-- Cabecera -->
-                    <img class="imagen-cabecera" src="./img/logo-abuela-alargado.png" alt="Logo Recetas Abuela"/>
-                </div>
-                <div class="col-2 bg-transparent align-items-center"> 
-                    <a href="http://www.instagram.com"><img class="redes-sociales" src="./img/instagram.png" alt="Instagram Las Recetas Abuela"/></a>
-                    <a href="https://twitter.com/RecetasAbu" target = "_blank"><img class="redes-sociales" src="./img/twitter.png" alt="Twitter Las Recetas Abuela"/></a>
-                    <a href="https://www.facebook.com/profile.php?id=100047956301415"><img class="redes-sociales" src="./img/facebook2.png" alt="Facebook Las Recetas Abuela"/></a>
+    <!-- ocupa el 100% del ancho de la página, bg-primary da el color, py-5 (genera el padding)-->
+    <div class="container-fluid">
+        <!-- Este genera los márgenes respecto al contenido, text-white aplica letra blanca para toda su etiqueta, se podría poner tb a los elementos -->
+        <div class="row"> <!-- Este div da inicio a la cabecera -->
+            <div class="col-9 cabecera py-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-9">
+                            <img class="img-fluid" src="./img/logo-abuela-alargado.png" alt="Logo Recetas Abuela"/>
+                        </div>
+                    </div>    
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <!-- Menú de navegación-->
-            <div class="menu_navegacion">
+            <div class="col-3 cabecera py-3"> <!-- Redes Sociales -->
+                <div class="container-fluid"> <!-- contenedor para redes sociales-->
+                    <div class="row">
+                        <div class="col-4">
+                            <a href="http://www.instagram.com" target="_blank"><img class="redes-sociales" src="./img/instagram.png" alt="Instagram Las Recetas Abuela"/></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://twitter.com/RecetasAbu" target="_blank" = "_blank"><img class="redes-sociales" src="./img/twitter.png" alt="Twitter Las Recetas Abuela"/></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://www.facebook.com/profile.php?id=100047956301415" target="_blank"><img class="redes-sociales" src="./img/facebook2.png" alt="Facebook Las Recetas Abuela"/></a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div> <!-- este div cierra la cabecera-->
+        <div class="row"> <!-- Este div da inicio al menú -->
+            <div class="col-12 menu_navegacion">
                 <div class="col-12 bg-transparent align-items-center">
                 <ul>
                     <li><a href="ruta" target = "_blank" >Inicio</a></li>
@@ -43,121 +56,95 @@
                     <li><a href="ruta" target = "_blank" >Pescados</a></li>
                     <li><a href="ruta" target = "_blank" >Postres</a></li>
                     <li><a href="ruta" target = "_blank" >Contacto</a></li>  
-                  </ul>	
+                </ul>	
                 </div>
             </div>
-        </div>
-        <div class="row">
-         <!-- Contenedor que incluye el cuerpo y pie de la página -->
-        
-            <div class="col-8 bg-success">
-            <!--<div class="col-lg-8 col-md-8 col-xs-12 col-sm-12 bg-success"> -->
-                <!-- Imágenes principal del Slider-->
-                <div class="w3-content" style=display:inline;">
-                    <img class="mySlides" src="img/recetas/portada.jpg" style="display:none">
-                    <img class="mySlides" src="img/recetas/Arroz_Empedrado-Murcia.jpg" style="position:absolute">
-                    <img class="mySlides" src="img/recetas/duck-breast-main-dish-fig-parsley.jpg" style="position:absolute">
-                    <img class="mySlides" src="img/slide/004.jpg" style="display:none">
-                    <img class="mySlides" src="img/slide/001.jpg" style="display:none">
+        </div> <!-- este div cierra el menú-->
+        <div class="row"> <!-- Este div da inicio al slide -->
+                <div id="carousel-1" class="carousel slide slideprincipal" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="./pages/verduras.html">
+                        <img class="d-block w-100 img-responsive" src="./img/recetas/arroz-mixto.jpg" alt="Arroz Mixto"></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="./pages/arroces_y_pastas.html">
+                        <img class="d-block w-100 img-responsive" src="./img/recetas/arroz-con-pollo.jpg" alt="Arroz con pollo"></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="./pages/carnes.html">
+                        <img class="d-block w-100 img-responsive" src="./img/recetas/pasta.jpg" alt="Pasta"></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="./pages/pescados.html">
+                        <img class="d-block w-100 img-responsive" src="./img/recetas/pasta-tagliatelle.jpg" alt="Pasta"></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="./pages/postres.html">
+                        <img class="d-block w-100 img-responsive" src="./img/recetas/tortellini.jpg" alt="Pasta"></a>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
                   </div>
-            </div>
-            <div class="col-4 bg-primary">
-            <!--<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 bg-primary">-->
-
-                <!-- Botones del Slider -->
-                <div class="w3-row-padding w3-section style=" style="max-width:20%""></div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="w3-col s4">
-                        <img class="demo w3-opacity w3-hover-opacity-off" src="img/slide/verduras.jpg" onclick="currentDiv(1)">
-                      </div></div>
-                </div>
-                <div class="row">
-                    <div class="col-12 bg-success">
-                        <div class="w3-col s4">
-                        <img class="demo w3-opacity w3-hover-opacity-off" src="img/slide/arroces-pastas.jpg" onclick="currentDiv(2)">
-                      </div></div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="w3-col s4">
-                        <img class="demo w3-opacity w3-hover-opacity-off" src="img/slide/carnes.jpg" onclick="currentDiv(3)">
-                      </div></div>
-                </div>
-                <div class="row">
-                    <div class="col-12 bg-success"><div class="w3-col s4">
-                        <img class="demo w3-opacity w3-hover-opacity-off" src="img/slide/pescados.jpg" onclick="currentDiv(4)">
-                      </div></div>
-                </div>
-                <div class="row">
-                    <div class="col-12 bg-success"><div class="w3-col s4">
-                        <img class="demo w3-opacity w3-hover-opacity-off" src="img/slide/postres.jpg" onclick="currentDiv(4)">
-                      </div></div>
-                </div>
-                <script>
-                    function currentDiv(n) {
-                      showDivs(slideIndex = n);
-                    }
-                    
-                    function showDivs(n) {
-                      var i;
-                      var x = document.getElementsByClassName("mySlides");
-                      var dots = document.getElementsByClassName("demo");
-                      if (n > x.length) {slideIndex = 1}
-                      if (n < 1) {slideIndex = x.length}
-                      for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                      }
-                      for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-                      }
-                      x[slideIndex-1].style.display = "block";
-                      dots[slideIndex-1].className += " w3-opacity-off";
-                    }
-                    </script>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-9 bg-primary">
+        </div> <!-- este div cierra el slide -->
+        <div class="row"> <!-- Este div da inicio al cuerpo -->
+            <div class="col-9">
                 <!-- Sección de novedades-->
                 <section>
-                    <p><h1>Últimas recetas</p></h1>
-                    <hr>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia commodi reprehenderit,
-                    ex dolores veritatis temporibus exercitationem iusto soluta amet laborum id sed nobis et ipsum ad
-                    eum eius ullam aut sint officiis. Quae tempora, minima fugit fugiat excepturi repudiandae. Doloribus
-                    laudantium minus, similique tempora at maxime fuga, suscipit asperiores necessitatibus possimus enim
-                    perferendis placeat ut sed. Cumque soluta quae distinctio dolore! Iste omnis recusandae sed? Tempore
-                    quam tenetur necessitatibus. Mollitia labore, asperiores consectetur nisi facere eius minima iusto
-                    in itaque beatae quibusdam, quis rem inventore temporibus delectus maiores veritatis quidem ipsum
-                    sint earum quas optio necessitatibus dolorum! Voluptates provident impedit repellat aspernatur nemo
-                    possimus quidem dolores incidunt unde rerum nam quasi voluptate dolore nesciunt cum recusandae,
-                    nostrum dicta quod commodi itaque enim sequi doloribus? Delectus vel at doloremque accusamus eius ad
-                    mollitia quasi neque inventore alias nulla commodi blanditiis magni, impedit maxime! Deserunt,
-                    reiciendis obcaecati dolor est quasi debitis.
+                    <article>
+                        <p><h1 class="h1_cabecera_seccion">Últimas recetas</h1>
+                        <hr>
+                        <h1 class="cabecera_receta">Arroz con pollo</h1>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus soluta ea maxime eos explicabo dignissimos tenetur iste
+                        omnis! Ipsa fugit in minus illum. Sequi voluptatum, excepturi optio enim consequatur provident corrupti nesciunt quis
+                        cumque quibusdam. <a href="receta">Leer más...</a></p>
+                    </article>
+                    <article>
+                        <hr>
+                        <p><h1 class="cabecera_receta">Tallarines a la carbonara</h1>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ab doloribus ea esse inventore magnam mollitia totam
+                        perspiciatis, placeat quia blanditiis repellendus laboriosam, libero fuga rerum. Doloremque vel eveniet minus possimus
+                        tempore totam, rerum provident, illum tempora assumenda ex cumque voluptatum eos? Totam aspernatur repudiandae nesciunt
+                        facere beatae tempora ratione amet incidunt veniam molestias vero, tenetur, quaerat nam neque ut? <a href="receta">Leer más...</a></p>
+                    </article>
+                    <article>
+                        <hr>
+                        <p><h1 class="cabecera_receta">Tarta de queso</h1>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero debitis saepe at dolore quos laboriosam sed quae dicta,
+                        quo aspernatur qui, culpa error fugiat repudiandae tempore excepturi magni officia numquam? Voluptate ut excepturi
+                        eligendi accusamus animi deleniti facilis, necessitatibus aspernatur.. <a href="receta">Leer más...</a></p>
+                    </article>
                 </section>
             </div>
             <div class="col-3">
-                <!-- Columna para patrocinadores y enlaces de interés -->
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam et assumenda iure cupiditate corporis,
-                veritatis accusantium nam molestias laboriosam praesentium ipsum. Excepturi, officiis laudantium aliquid
-                ea architecto fugit itaque quod!
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 bg-success">
-                 <!-- Footer -->
-                <small> 
-                    
-                    &copy;Recetas de la Abuela All rights reserved 
-
-                </small>
-               
-                
-            </div>
-        </div>
-    
-    </div>
+                <aside>
+                    <div class="container-fluid"> <!-- Sección Patrocinadores-->
+                        <p>
+                        <h1 class="h1_cabecera_seccion">Patrocinadores</h1>
+                        <hr>
+                        <a href="http://www.flimar.com" target="_blank"><img src="./img/patrocinadores/flimar.png" alt="Supermercado Flimar" class="img-fluid"></a>
+                        <p></p>
+                        <a href="http://www.coviran.es" target="_blank"><img src="./img/patrocinadores/coviran.png" alt="Supermercados Coviran" class="img-fluid"></a>
+                        <p></p>
+                        <a href="http://supermercadospiedra.com/" target="_blank"><img src="./img/patrocinadores/piedra.png" alt="Supermercados Piedra" class="img-fluid"></a>
+                        <p></p>
+                        <a href="http://www.hermanhers.es/" target="_blank"><img src="./img/patrocinadores/hermanHers.jpg" alt="Herman Hers, gallinas de raza" class="img-fluid"></a>
+                        </p>
+                        <hr>
+                        <p>
+                        <h1 class="h1_cabecera_seccion">Puede interesar...</h1>
+                        <hr>
+                    </div>
+                </aside>
+        </div> <!-- este div cierra el cuerpo -->
+    </div> <!-- este div cierra el container fluid principal -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -167,9 +154,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>

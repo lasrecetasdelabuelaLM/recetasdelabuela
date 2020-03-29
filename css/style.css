@@ -5,8 +5,6 @@
     /* Estilos correspondientes a la cabecera */
     .cabecera {
         background-color: #e8bc65;
-        padding: 15px;
-        padding-left: 4%;
     }
     .imagen-cabecera {
         width: 75%;
@@ -14,24 +12,26 @@
     }
     .redes-sociales {
         max-width: 50px;
-        width: 30%;
+        min-width: 30px;
+        width:100%;
     }
     .menu_navegacion {
-        width: 100%;
         background-color: #dc982f;
     }
 
-    /* Imágenes del slider */
-
-    .mySlides {
-
-        width: 400px;
+    .slideprincipal {
+        width: 100%;
     }
 
     /* Estilos de diseño de secciones */
-    h1 {
+    .h1_cabecera_seccion {
         font-family: 'Zhi Mang Xing', cursive;
         font-size: 35px;
+    }
+
+    .cabecera_receta {
+        font-family: 'Arvo', serif;
+        font-size: 25px;
     }
 
     /* Estilos correspondientes al menú de navegación*/
@@ -50,11 +50,12 @@
        display:block;
        color: black; 
        text-align: center;
-       padding: 14px 16px;
+       padding: 3px 16px;
        text-decoration: none;
     }
 
     li a:hover {
+        text-decoration: none;
         font-style: italic;
-        color: grey;
+        color: white;
     }

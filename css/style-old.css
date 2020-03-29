@@ -1,0 +1,60 @@
+
+    body {
+        font-family: 'Arvo', serif;
+    }
+    /* Estilos correspondientes a la cabecera */
+    .cabecera {
+        background-color: #e8bc65;
+        padding: 15px;
+        padding-left: 4%;
+    }
+    .imagen-cabecera {
+        width: 75%;
+        max-width: 950px;
+    }
+    .redes-sociales {
+        max-width: 50px;
+        width: 30%;
+    }
+    .menu_navegacion {
+        width: 100%;
+        background-color: #dc982f;
+    }
+
+    /* Imágenes del slider */
+
+    .mySlides {
+
+        width: 400px;
+    }
+
+    /* Estilos de diseño de secciones */
+    h1 {
+        font-family: 'Zhi Mang Xing', cursive;
+        font-size: 35px;
+    }
+
+    /* Estilos correspondientes al menú de navegación*/
+    ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    overflow: hidden;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+       display:block;
+       color: black; 
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+    }
+
+    li a:hover {
+        font-style: italic;
+        color: grey;
+    }
