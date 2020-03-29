@@ -1,29 +1,61 @@
 
+    body {
+        font-family: 'Arvo', serif;
+    }
+    /* Estilos correspondientes a la cabecera */
+    .cabecera {
+        background-color: #e8bc65;
+    }
+    .imagen-cabecera {
+        width: 75%;
+        max-width: 950px;
+    }
+    .redes-sociales {
+        max-width: 50px;
+        min-width: 30px;
+        width:100%;
+    }
+    .menu_navegacion {
+        background-color: #dc982f;
+    }
 
+    .slideprincipal {
+        width: 100%;
+    }
 
-ul {
-	
-		list-style-type: none;
-		margin: 10;
-	    padding: 10;
-	    overflow: hidden;
-	    background-color: #dc982f;
-	}
+    /* Estilos de diseño de secciones */
+    .h1_cabecera_seccion {
+        font-family: 'Zhi Mang Xing', cursive;
+        font-size: 35px;
+    }
 
-li {
-	    float: left;
-		
-	}
+    .cabecera_receta {
+        font-family: 'Arvo', serif;
+        font-size: 25px;
+    }
 
-li a {
-	   display:block;
-	   color: black; 
-	   text-align: center;
-	   padding: 14px 16px;
-	   text-decoration: none;
-	}
+    /* Estilos correspondientes al menú de navegación*/
+    ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    overflow: hidden;
+    }
 
-li a:hover {
-		font-style: italic;
-		color: grey;
-	}
+    li {
+        float: left;
+    }
+
+    li a {
+       display:block;
+       color: black; 
+       text-align: center;
+       padding: 3px 16px;
+       text-decoration: none;
+    }
+
+    li a:hover {
+        text-decoration: none;
+        font-style: italic;
+        color: white;
+    }

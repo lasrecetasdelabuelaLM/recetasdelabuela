@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<link rel="icon" type="image/png" href="../img/lm-favicon-pajarita.png" />
+		<title>Lenguaje de Marcas.</title>
+		<meta charset="utf-8">
+		<meta name="description" content" ">
+		<meta name="keywords" content" Lenguaje de Marcas">
+        <link rel="stylesheet" href="css/estilosUnidad5-8.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+        <header>
+        </header>
+        <nav>
+        </nav>  
+        <main>
+            <div><h1>Ejercicio de clase</h1></div>
+        <section>
+            <article>
+                <div class="w3-content" style="max-width:75%;display:inline;">
+                    <img class="mySlides" src="img/slide/001.jpg" style="width:450px;">
+                    <img class="mySlides" src="img/slide/002.jpg" style="width:450px;display:none">
+                    <img class="mySlides" src="img/slide/003.jpg" style="width:450px;display:none">
+                    <img class="mySlides" src="img/slide/004.jpg" style="width:450px;display:none">
+                  </div>
+                  <div class="w3-row-padding w3-section style=" style="max-width:20%"">
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="img/slide/001b.jpg" style="width:225px;cursor:pointer" onclick="currentDiv(1)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="img/slide/002b.jpg" style="width:225px;cursor:pointer" onclick="currentDiv(2)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="img/slide/003b.jpg" style="width:225px;cursor:pointer" onclick="currentDiv(3)">
+                    </div>
+                    <div class="w3-col s4">
+                      <img class="demo w3-opacity w3-hover-opacity-off" src="img/slide/004b.jpg" style="width:225px;cursor:pointer" onclick="currentDiv(4)">
+                    </div>
+                  </div>
+                  <script>
+                  function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                  }
+                  
+                  function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                    }
+                    x[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " w3-opacity-off";
+                  }
+                  </script>
+
+            </article>
+        </main>
+		<footer>
+			<address>&copy; Todos los derechos reservados. Manuel Hidalgo Pérez. <a href= "http://www.subeunescalon.com" target="blank">Sube un Escalón.</a> 2019</address>
+        </footer>
+        </main>
+	</body>
+</html>
