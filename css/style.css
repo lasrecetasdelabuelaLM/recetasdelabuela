@@ -51,6 +51,15 @@
     overflow: hidden;
     }
 
+    .navbar {
+        padding: 0px !important;
+    }
+
+    .navbar-toggler {
+        color: black !important;
+        border-color: transparent !important;
+    }
+
     .lista_menu {
         float: left;
     }
