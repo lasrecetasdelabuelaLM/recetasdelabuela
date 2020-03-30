@@ -20,16 +20,16 @@
     <div class="container-fluid">
         <!-- Este genera los márgenes respecto al contenido, text-white aplica letra blanca para toda su etiqueta, se podría poner tb a los elementos -->
         <div class="row"> <!-- Este div da inicio a la cabecera -->
-            <div class="col-9 cabecera py-3">
+            <div class="col-xl-9 col-lg-9 col-md-12 cabecera py-3">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-9">
-                            <img class="img-fluid" src="../..//img/logo-abuela-alargado.png" alt="Logo Recetas Abuela"/>
+                        <div class="col-xl-9 col-lg-9 col-md-12">
+                            <img class="img-fluid" src="../../img/logo-abuela-alargado.png" alt="Logo Recetas Abuela"/>
                         </div>
                     </div>    
                 </div>
             </div>
-            <div class="col-3 cabecera py-3"> <!-- Redes Sociales -->
+            <div class="col-xl-3 col-lg-3 d-none d-lg-block cabecera py-3"> <!-- Redes Sociales -->
                 <div class="container-fluid"> <!-- contenedor para redes sociales-->
                     <div class="row">
                         <div class="col-4">
@@ -47,17 +47,22 @@
         </div> <!-- este div cierra la cabecera-->
         <div class="row"> <!-- Este div da inicio al menú -->
             <div class="col-12 menu_navegacion">
-                <div class="col-12 bg-transparent align-items-center">
-                    <ul class="ul_menu">
-                        <li class="lista_menu"><a href="index.html">Inicio</a></li>
-                        <li class="lista_menu"><a href="../verduras/index.html">Verduras</a></li>
-                        <li class="lista_menu"><a href="../arrocesYpastas/index.html">Arroces y pastas</a></li>
-                        <li class="lista_menu"><a href="../carnes/index.html">Carnes</a></li>
-                        <li class="lista_menu"><a href="../pescados/index.html">Pescados</a></li>
-                        <li class="lista_menu"><a href="../postres/index.html">Postres</a></li>
-                        <li class="lista_menu"><a href="../contacto.html">Contacto</a></li>  
-                    </ul>
-                </div>
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     Menú
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ul_menu">
+                        <li class="lista_menu nav-item"><a href="../../index.html">Inicio</a></li>
+                        <li class="lista_menu nav-item"><a href="../../pages/verduras/index.html">Verduras</a></li>
+                        <li class="lista_menu nav-item"><a href="../../pages/arrocesYpastas/index.html">Arroces y pastas</a></li>
+                        <li class="lista_menu nav-item"><a href="../../pages/carnes/index.html">Carnes</a></li>
+                        <li class="lista_menu nav-item"><a href="../../pages/pescados/index.html">Pescados</a></li>
+                        <li class="lista_menu nav-item"><a href="../../pages/postres/index.html">Postres</a></li>
+                        <li class="lista_menu nav-item"><a href="../../pages/contacto.html">Contacto</a></li> 
+                      </ul>
+                    </div>
+                  </nav>
             </div>
         </div> <!-- este div cierra el menú-->
         <div class="row"> <!-- Este div da inicio al cuerpo -->
@@ -148,6 +153,36 @@
                         <hr>
                     </div>
                 </aside>
+                </div>
+                <div class="col-12 d-block d-lg-none cabecera py-3"> <!-- Redes Sociales -->
+                    <div class="container-fluid"> <!-- contenedor para redes sociales-->
+                        <div class="row">
+                            <div class="col-4 d-flex justify-content-center">
+                                <a href="http://www.instagram.com" target="_blank"><img class="redes-sociales" src="./img/instagram.png" alt="Instagram Las Recetas Abuela"/></a>
+                            </div>
+                            <div class="col-4 d-flex justify-content-center">
+                                <a href="https://twitter.com/RecetasAbu" target="_blank" = "_blank"><img class="redes-sociales" src="./img/twitter.png" alt="Twitter Las Recetas Abuela"/></a>
+                            </div>
+                            <div class="col-4 d-flex justify-content-center">
+                                <a href="https://www.facebook.com/profile.php?id=100047956301415" target="_blank"><img class="redes-sociales" src="./img/facebook2.png" alt="Facebook Las Recetas Abuela"/></a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-12 d-block d-lg-none cabecera py-3"> <!-- Redes Sociales -->
+                    <div class="container-fluid"> <!-- contenedor para redes sociales-->
+                        <div class="row">
+                            <div class="col-4 d-flex justify-content-center">
+                                <a href="http://www.instagram.com" target="_blank"><img class="redes-sociales" src="../../img/instagram.png" alt="Instagram Las Recetas Abuela"/></a>
+                            </div>
+                            <div class="col-4 d-flex justify-content-center">
+                                <a href="https://twitter.com/RecetasAbu" target="_blank" = "_blank"><img class="redes-sociales" src="../../img/twitter.png" alt="Twitter Las Recetas Abuela"/></a>
+                            </div>
+                            <div class="col-4 d-flex justify-content-center">
+                                <a href="https://www.facebook.com/profile.php?id=100047956301415" target="_blank"><img class="redes-sociales" src="../../img/facebook2.png" alt="Facebook Las Recetas Abuela"/></a>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div> <!-- este div cierra el cuerpo -->
